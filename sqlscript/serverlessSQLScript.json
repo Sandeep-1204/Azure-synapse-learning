@@ -2,12 +2,12 @@
 	"name": "serverlessSQLScript",
 	"properties": {
 		"content": {
-			"query": "",
+			"query": "--CREATING MASTERKEY\nCREATE MASTER KEY ENCRYPTION BY PASSWORD = 'synlearn@0001'\n\n--CREATE CREDENTIAL\n\nCREATE DATABASE SCOPED CREDENTIAL syncreds\nWITH \n    IDENTITY = 'Managed Identity'",
 			"metadata": {
 				"language": "sql"
 			},
 			"currentConnection": {
-				"databaseName": "master",
+				"databaseName": "syn_Serverless",
 				"poolName": "Built-in"
 			},
 			"resultLimit": 5000
